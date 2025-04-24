@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow.ui'
+## Form generated from reading UI file 'MainWindowYgRjYs.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.3
 ##
@@ -16,18 +16,59 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QHeaderView,
-    QLabel, QMainWindow, QMenuBar, QPlainTextEdit,
-    QPushButton, QSizePolicy, QStatusBar, QTableWidget,
-    QTableWidgetItem, QWidget)
+    QLabel, QMainWindow, QPlainTextEdit, QPushButton,
+    QRadioButton, QSizePolicy, QSpacerItem, QSpinBox,
+    QTabWidget, QTableWidget, QTableWidgetItem, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1147, 600)
+        MainWindow.resize(627, 607)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.tConfigurationsRegister = QTableWidget(self.centralwidget)
+        self.gridLayout_6 = QGridLayout(self.centralwidget)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_3 = QGridLayout()
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.label_2 = QLabel(self.centralwidget)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout_3.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.bConnectDisconnect = QPushButton(self.centralwidget)
+        self.bConnectDisconnect.setObjectName(u"bConnectDisconnect")
+
+        self.gridLayout_3.addWidget(self.bConnectDisconnect, 0, 2, 1, 1)
+
+        self.label = QLabel(self.centralwidget)
+        self.label.setObjectName(u"label")
+
+        self.gridLayout_3.addWidget(self.label, 1, 1, 1, 1)
+
+        self.cListPort = QComboBox(self.centralwidget)
+        self.cListPort.setObjectName(u"cListPort")
+
+        self.gridLayout_3.addWidget(self.cListPort, 0, 1, 1, 1)
+
+        self.LStateMachine = QLabel(self.centralwidget)
+        self.LStateMachine.setObjectName(u"LStateMachine")
+
+        self.gridLayout_3.addWidget(self.LStateMachine, 1, 2, 1, 1)
+
+
+        self.gridLayout_6.addLayout(self.gridLayout_3, 1, 0, 1, 1)
+
+        self.tabWidget = QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName(u"tabWidget")
+        self.tab = QWidget()
+        self.tab.setObjectName(u"tab")
+        self.verticalLayout_2 = QVBoxLayout(self.tab)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.gridLayout_4 = QGridLayout()
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.tConfigurationsRegister = QTableWidget(self.tab)
         if (self.tConfigurationsRegister.columnCount() < 4):
             self.tConfigurationsRegister.setColumnCount(4)
         __qtablewidgetitem = QTableWidgetItem()
@@ -229,23 +270,38 @@ class Ui_MainWindow(object):
         __qtablewidgetitem97 = QTableWidgetItem()
         self.tConfigurationsRegister.setItem(46, 1, __qtablewidgetitem97)
         self.tConfigurationsRegister.setObjectName(u"tConfigurationsRegister")
-        self.tConfigurationsRegister.setGeometry(QRect(0, 0, 451, 541))
-        self.label = QLabel(self.centralwidget)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(460, 530, 49, 16))
-        self.LStateMachine = QLabel(self.centralwidget)
-        self.LStateMachine.setObjectName(u"LStateMachine")
-        self.LStateMachine.setGeometry(QRect(500, 530, 271, 20))
-        self.cListPort = QComboBox(self.centralwidget)
-        self.cListPort.setObjectName(u"cListPort")
-        self.cListPort.setGeometry(QRect(460, 470, 311, 22))
-        self.bConnectDisconnect = QPushButton(self.centralwidget)
-        self.bConnectDisconnect.setObjectName(u"bConnectDisconnect")
-        self.bConnectDisconnect.setGeometry(QRect(460, 500, 311, 24))
-        self.label_2 = QLabel(self.centralwidget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(460, 450, 49, 16))
-        self.tStatusRegister = QTableWidget(self.centralwidget)
+        self.tConfigurationsRegister.horizontalHeader().setStretchLastSection(True)
+        self.tConfigurationsRegister.verticalHeader().setCascadingSectionResizes(False)
+
+        self.gridLayout_4.addWidget(self.tConfigurationsRegister, 0, 0, 4, 1)
+
+        self.bLoadFile = QPushButton(self.tab)
+        self.bLoadFile.setObjectName(u"bLoadFile")
+
+        self.gridLayout_4.addWidget(self.bLoadFile, 2, 1, 1, 1)
+
+        self.bWriteConfigurationsRegister = QPushButton(self.tab)
+        self.bWriteConfigurationsRegister.setObjectName(u"bWriteConfigurationsRegister")
+
+        self.gridLayout_4.addWidget(self.bWriteConfigurationsRegister, 1, 1, 1, 1)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_4.addItem(self.verticalSpacer_6, 0, 1, 1, 1)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_4.addItem(self.verticalSpacer_7, 3, 1, 1, 1)
+
+
+        self.verticalLayout_2.addLayout(self.gridLayout_4)
+
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_3 = QWidget()
+        self.tab_3.setObjectName(u"tab_3")
+        self.verticalLayout_3 = QVBoxLayout(self.tab_3)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.tStatusRegister = QTableWidget(self.tab_3)
         if (self.tStatusRegister.columnCount() < 3):
             self.tStatusRegister.setColumnCount(3)
         __qtablewidgetitem98 = QTableWidgetItem()
@@ -313,128 +369,324 @@ class Ui_MainWindow(object):
         __qtablewidgetitem128 = QTableWidgetItem()
         self.tStatusRegister.setItem(13, 1, __qtablewidgetitem128)
         self.tStatusRegister.setObjectName(u"tStatusRegister")
-        self.tStatusRegister.setGeometry(QRect(460, 0, 341, 441))
-        self.gridLayoutWidget = QWidget(self.centralwidget)
-        self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
-        self.gridLayoutWidget.setGeometry(QRect(810, 30, 321, 181))
-        self.gridLayout = QGridLayout(self.gridLayoutWidget)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.bSPWD = QPushButton(self.gridLayoutWidget)
-        self.bSPWD.setObjectName(u"bSPWD")
+        self.tStatusRegister.setShowGrid(True)
+        self.tStatusRegister.setSortingEnabled(False)
+        self.tStatusRegister.horizontalHeader().setCascadingSectionResizes(False)
+        self.tStatusRegister.horizontalHeader().setHighlightSections(True)
+        self.tStatusRegister.horizontalHeader().setProperty(u"showSortIndicator", False)
+        self.tStatusRegister.horizontalHeader().setStretchLastSection(True)
+        self.tStatusRegister.verticalHeader().setVisible(True)
+        self.tStatusRegister.verticalHeader().setCascadingSectionResizes(False)
+        self.tStatusRegister.verticalHeader().setHighlightSections(True)
+        self.tStatusRegister.verticalHeader().setStretchLastSection(False)
 
-        self.gridLayout.addWidget(self.bSPWD, 2, 2, 1, 1)
+        self.verticalLayout_3.addWidget(self.tStatusRegister)
 
-        self.bSCAL = QPushButton(self.gridLayoutWidget)
-        self.bSCAL.setObjectName(u"bSCAL")
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.gridLayout.addWidget(self.bSCAL, 1, 0, 1, 1)
+        self.verticalLayout_3.addItem(self.horizontalSpacer)
 
-        self.bSFTX = QPushButton(self.gridLayoutWidget)
-        self.bSFTX.setObjectName(u"bSFTX")
-
-        self.gridLayout.addWidget(self.bSFTX, 3, 1, 1, 1)
-
-        self.bSXOFF = QPushButton(self.gridLayoutWidget)
-        self.bSXOFF.setObjectName(u"bSXOFF")
-
-        self.gridLayout.addWidget(self.bSXOFF, 0, 2, 1, 1)
-
-        self.bSTX = QPushButton(self.gridLayoutWidget)
-        self.bSTX.setObjectName(u"bSTX")
-
-        self.gridLayout.addWidget(self.bSTX, 1, 2, 1, 1)
-
-        self.bSRES = QPushButton(self.gridLayoutWidget)
-        self.bSRES.setObjectName(u"bSRES")
-
-        self.gridLayout.addWidget(self.bSRES, 0, 0, 1, 1)
-
-        self.bSWORRST = QPushButton(self.gridLayoutWidget)
-        self.bSWORRST.setObjectName(u"bSWORRST")
-
-        self.gridLayout.addWidget(self.bSWORRST, 3, 2, 1, 1)
-
-        self.bSRX = QPushButton(self.gridLayoutWidget)
-        self.bSRX.setObjectName(u"bSRX")
-
-        self.gridLayout.addWidget(self.bSRX, 1, 1, 1, 1)
-
-        self.bSFSTXON = QPushButton(self.gridLayoutWidget)
-        self.bSFSTXON.setObjectName(u"bSFSTXON")
-
-        self.gridLayout.addWidget(self.bSFSTXON, 0, 1, 1, 1)
-
-        self.bSIDLE = QPushButton(self.gridLayoutWidget)
-        self.bSIDLE.setObjectName(u"bSIDLE")
-
-        self.gridLayout.addWidget(self.bSIDLE, 2, 0, 1, 1)
-
-        self.bSFRX = QPushButton(self.gridLayoutWidget)
-        self.bSFRX.setObjectName(u"bSFRX")
-
-        self.gridLayout.addWidget(self.bSFRX, 3, 0, 1, 1)
-
-        self.bSWOR = QPushButton(self.gridLayoutWidget)
-        self.bSWOR.setObjectName(u"bSWOR")
-
-        self.gridLayout.addWidget(self.bSWOR, 2, 1, 1, 1)
-
-        self.bSNOP = QPushButton(self.gridLayoutWidget)
-        self.bSNOP.setObjectName(u"bSNOP")
-
-        self.gridLayout.addWidget(self.bSNOP, 4, 1, 1, 1)
-
-        self.bWriteConfigurationsRegister = QPushButton(self.gridLayoutWidget)
-        self.bWriteConfigurationsRegister.setObjectName(u"bWriteConfigurationsRegister")
-
-        self.gridLayout.addWidget(self.bWriteConfigurationsRegister, 4, 0, 1, 1)
-
-        self.bLoadFile = QPushButton(self.gridLayoutWidget)
-        self.bLoadFile.setObjectName(u"bLoadFile")
-
-        self.gridLayout.addWidget(self.bLoadFile, 4, 2, 1, 1)
-
-        self.label_3 = QLabel(self.centralwidget)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(810, 10, 49, 16))
-        self.gridLayoutWidget_2 = QWidget(self.centralwidget)
-        self.gridLayoutWidget_2.setObjectName(u"gridLayoutWidget_2")
-        self.gridLayoutWidget_2.setGeometry(QRect(810, 230, 321, 103))
-        self.gridLayout_2 = QGridLayout(self.gridLayoutWidget_2)
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_2 = QWidget()
+        self.tab_2.setObjectName(u"tab_2")
+        self.verticalLayout_4 = QVBoxLayout(self.tab_2)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.bWriteFIFO = QPushButton(self.gridLayoutWidget_2)
-        self.bWriteFIFO.setObjectName(u"bWriteFIFO")
-
-        self.gridLayout_2.addWidget(self.bWriteFIFO, 2, 1, 1, 1)
-
-        self.bReadFIFO = QPushButton(self.gridLayoutWidget_2)
+        self.bReadFIFO = QPushButton(self.tab_2)
         self.bReadFIFO.setObjectName(u"bReadFIFO")
 
-        self.gridLayout_2.addWidget(self.bReadFIFO, 2, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.bReadFIFO, 3, 0, 1, 1)
 
-        self.plainFIFO = QPlainTextEdit(self.gridLayoutWidget_2)
+        self.bWriteFIFO = QPushButton(self.tab_2)
+        self.bWriteFIFO.setObjectName(u"bWriteFIFO")
+
+        self.gridLayout_2.addWidget(self.bWriteFIFO, 3, 1, 1, 1)
+
+        self.plainFIFO = QPlainTextEdit(self.tab_2)
         self.plainFIFO.setObjectName(u"plainFIFO")
 
-        self.gridLayout_2.addWidget(self.plainFIFO, 0, 0, 1, 2)
+        self.gridLayout_2.addWidget(self.plainFIFO, 2, 0, 1, 2)
+
+        self.label_4 = QLabel(self.tab_2)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout_2.addWidget(self.label_4, 1, 0, 1, 2)
+
+
+        self.verticalLayout_4.addLayout(self.gridLayout_2)
+
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.bSPWD = QPushButton(self.tab_2)
+        self.bSPWD.setObjectName(u"bSPWD")
+
+        self.gridLayout.addWidget(self.bSPWD, 3, 2, 1, 1)
+
+        self.bSRX = QPushButton(self.tab_2)
+        self.bSRX.setObjectName(u"bSRX")
+
+        self.gridLayout.addWidget(self.bSRX, 2, 1, 1, 1)
+
+        self.bSWORRST = QPushButton(self.tab_2)
+        self.bSWORRST.setObjectName(u"bSWORRST")
+
+        self.gridLayout.addWidget(self.bSWORRST, 4, 2, 1, 1)
+
+        self.bSTX = QPushButton(self.tab_2)
+        self.bSTX.setObjectName(u"bSTX")
+
+        self.gridLayout.addWidget(self.bSTX, 2, 2, 1, 1)
+
+        self.bSFTX = QPushButton(self.tab_2)
+        self.bSFTX.setObjectName(u"bSFTX")
+
+        self.gridLayout.addWidget(self.bSFTX, 4, 1, 1, 1)
+
+        self.bSNOP = QPushButton(self.tab_2)
+        self.bSNOP.setObjectName(u"bSNOP")
+
+        self.gridLayout.addWidget(self.bSNOP, 5, 1, 1, 1)
+
+        self.bSWOR = QPushButton(self.tab_2)
+        self.bSWOR.setObjectName(u"bSWOR")
+
+        self.gridLayout.addWidget(self.bSWOR, 3, 1, 1, 1)
+
+        self.bSXOFF = QPushButton(self.tab_2)
+        self.bSXOFF.setObjectName(u"bSXOFF")
+
+        self.gridLayout.addWidget(self.bSXOFF, 1, 2, 1, 1)
+
+        self.bSRES = QPushButton(self.tab_2)
+        self.bSRES.setObjectName(u"bSRES")
+
+        self.gridLayout.addWidget(self.bSRES, 1, 0, 1, 1)
+
+        self.bSFSTXON = QPushButton(self.tab_2)
+        self.bSFSTXON.setObjectName(u"bSFSTXON")
+
+        self.gridLayout.addWidget(self.bSFSTXON, 1, 1, 1, 1)
+
+        self.bSIDLE = QPushButton(self.tab_2)
+        self.bSIDLE.setObjectName(u"bSIDLE")
+
+        self.gridLayout.addWidget(self.bSIDLE, 3, 0, 1, 1)
+
+        self.bSFRX = QPushButton(self.tab_2)
+        self.bSFRX.setObjectName(u"bSFRX")
+
+        self.gridLayout.addWidget(self.bSFRX, 4, 0, 1, 1)
+
+        self.bSCAL = QPushButton(self.tab_2)
+        self.bSCAL.setObjectName(u"bSCAL")
+
+        self.gridLayout.addWidget(self.bSCAL, 2, 0, 1, 1)
+
+        self.label_3 = QLabel(self.tab_2)
+        self.label_3.setObjectName(u"label_3")
+
+        self.gridLayout.addWidget(self.label_3, 0, 0, 1, 3)
+
+
+        self.verticalLayout_4.addLayout(self.gridLayout)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_5)
+
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_4 = QWidget()
+        self.tab_4.setObjectName(u"tab_4")
+        self.verticalLayout_5 = QVBoxLayout(self.tab_4)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.gridLayout_5 = QGridLayout()
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.label_13 = QLabel(self.tab_4)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_5.addWidget(self.label_13, 3, 1, 1, 1)
+
+        self.label_12 = QLabel(self.tab_4)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_5.addWidget(self.label_12, 4, 2, 1, 1)
+
+        self.label_8 = QLabel(self.tab_4)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_5.addWidget(self.label_8, 6, 2, 1, 1)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_5.addItem(self.verticalSpacer_2, 8, 1, 1, 1)
+
+        self.label_16 = QLabel(self.tab_4)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_5.addWidget(self.label_16, 1, 2, 1, 1)
+
+        self.label_6 = QLabel(self.tab_4)
+        self.label_6.setObjectName(u"label_6")
+
+        self.gridLayout_5.addWidget(self.label_6, 2, 2, 1, 1)
+
+        self.label_5 = QLabel(self.tab_4)
+        self.label_5.setObjectName(u"label_5")
+
+        self.gridLayout_5.addWidget(self.label_5, 2, 1, 1, 1)
+
+        self.label_9 = QLabel(self.tab_4)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_5.addWidget(self.label_9, 5, 1, 1, 1)
+
+        self.label_15 = QLabel(self.tab_4)
+        self.label_15.setObjectName(u"label_15")
+
+        self.gridLayout_5.addWidget(self.label_15, 1, 1, 1, 1)
+
+        self.label_7 = QLabel(self.tab_4)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_5.addWidget(self.label_7, 6, 1, 1, 1)
+
+        self.pushButton = QPushButton(self.tab_4)
+        self.pushButton.setObjectName(u"pushButton")
+
+        self.gridLayout_5.addWidget(self.pushButton, 7, 1, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.tab_4)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+
+        self.gridLayout_5.addWidget(self.pushButton_2, 7, 2, 1, 1)
+
+        self.label_10 = QLabel(self.tab_4)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_5.addWidget(self.label_10, 5, 2, 1, 1)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_5.addItem(self.verticalSpacer, 0, 1, 1, 1)
+
+        self.plainTextEdit = QPlainTextEdit(self.tab_4)
+        self.plainTextEdit.setObjectName(u"plainTextEdit")
+
+        self.gridLayout_5.addWidget(self.plainTextEdit, 0, 0, 9, 1)
+
+        self.label_11 = QLabel(self.tab_4)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_5.addWidget(self.label_11, 4, 1, 1, 1)
+
+        self.label_14 = QLabel(self.tab_4)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_5.addWidget(self.label_14, 3, 2, 1, 1)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_5.addItem(self.verticalSpacer_4, 9, 0, 1, 1)
+
+
+        self.verticalLayout_5.addLayout(self.gridLayout_5)
+
+        self.tabWidget.addTab(self.tab_4, "")
+        self.tab_5 = QWidget()
+        self.tab_5.setObjectName(u"tab_5")
+        self.gridLayout_7 = QGridLayout(self.tab_5)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.label_19 = QLabel(self.tab_5)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_7.addWidget(self.label_19, 5, 0, 1, 1)
+
+        self.radioButton = QRadioButton(self.tab_5)
+        self.radioButton.setObjectName(u"radioButton")
+
+        self.gridLayout_7.addWidget(self.radioButton, 2, 0, 1, 1)
+
+        self.spinBox = QSpinBox(self.tab_5)
+        self.spinBox.setObjectName(u"spinBox")
+        self.spinBox.setMaximum(60)
+        self.spinBox.setValue(30)
+
+        self.gridLayout_7.addWidget(self.spinBox, 4, 0, 1, 1)
+
+        self.plainTextEdit_2 = QPlainTextEdit(self.tab_5)
+        self.plainTextEdit_2.setObjectName(u"plainTextEdit_2")
+
+        self.gridLayout_7.addWidget(self.plainTextEdit_2, 2, 2, 12, 1)
+
+        self.label_17 = QLabel(self.tab_5)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_7.addWidget(self.label_17, 1, 2, 1, 1)
+
+        self.spinBox_3 = QSpinBox(self.tab_5)
+        self.spinBox_3.setObjectName(u"spinBox_3")
+        self.spinBox_3.setMaximum(1000)
+        self.spinBox_3.setValue(100)
+
+        self.gridLayout_7.addWidget(self.spinBox_3, 8, 0, 1, 1)
+
+        self.radioButton_2 = QRadioButton(self.tab_5)
+        self.radioButton_2.setObjectName(u"radioButton_2")
+
+        self.gridLayout_7.addWidget(self.radioButton_2, 1, 0, 1, 1)
+
+        self.label_20 = QLabel(self.tab_5)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_7.addWidget(self.label_20, 7, 0, 1, 1)
+
+        self.label_18 = QLabel(self.tab_5)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_7.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.spinBox_2 = QSpinBox(self.tab_5)
+        self.spinBox_2.setObjectName(u"spinBox_2")
+        self.spinBox_2.setMaximum(10000)
+        self.spinBox_2.setValue(300)
+
+        self.gridLayout_7.addWidget(self.spinBox_2, 6, 0, 1, 1)
+
+        self.pushButton_3 = QPushButton(self.tab_5)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+
+        self.gridLayout_7.addWidget(self.pushButton_3, 2, 3, 1, 1)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_7.addItem(self.verticalSpacer_3, 14, 2, 1, 1)
+
+        self.pushButton_4 = QPushButton(self.tab_5)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+
+        self.gridLayout_7.addWidget(self.pushButton_4, 4, 3, 1, 1)
+
+        self.tabWidget.addTab(self.tab_5, "")
+
+        self.gridLayout_6.addWidget(self.tabWidget, 0, 0, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
-        self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1147, 22))
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QStatusBar(MainWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+
+        self.tabWidget.setCurrentIndex(0)
+
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0440\u0442", None))
+        self.bConnectDisconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0456\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u0438", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"State", None))
+        self.LStateMachine.setText(QCoreApplication.translate("MainWindow", u"Unknown", None))
         ___qtablewidgetitem = self.tConfigurationsRegister.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441\u0430", None));
         ___qtablewidgetitem1 = self.tConfigurationsRegister.horizontalHeaderItem(1)
@@ -636,10 +888,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem97.setText(QCoreApplication.translate("MainWindow", u"TEST0", None));
         self.tConfigurationsRegister.setSortingEnabled(__sortingEnabled)
 
-        self.label.setText(QCoreApplication.translate("MainWindow", u"State", None))
-        self.LStateMachine.setText(QCoreApplication.translate("MainWindow", u"Unknown", None))
-        self.bConnectDisconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0456\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u0438", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0440\u0442", None))
+        self.bLoadFile.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0438\u0442\u0438", None))
+        self.bWriteConfigurationsRegister.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u0438 \u043a\u043e\u043d\u0444.", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043d\u0444\u0456\u0433\u0443\u0440\u0430\u0446\u0456\u044f \u043c\u043e\u0434\u0443\u043b\u044f", None))
         ___qtablewidgetitem98 = self.tStatusRegister.horizontalHeaderItem(0)
         ___qtablewidgetitem98.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441\u0430", None));
         ___qtablewidgetitem99 = self.tStatusRegister.horizontalHeaderItem(1)
@@ -707,23 +958,48 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem128.setText(QCoreApplication.translate("MainWindow", u"RCCTRL0_STATUS", None));
         self.tStatusRegister.setSortingEnabled(__sortingEnabled1)
 
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0433\u0456\u0441\u0442\u0440\u0438 \u0441\u0442\u0430\u043d\u0443", None))
+        self.bReadFIFO.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0447\u0438\u0442\u0430\u0442\u0438 \u0431\u0443\u0444\u0435\u0440", None))
+        self.bWriteFIFO.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0443\u0444\u0435\u0440", None))
         self.bSPWD.setText(QCoreApplication.translate("MainWindow", u"SPWD", None))
-        self.bSCAL.setText(QCoreApplication.translate("MainWindow", u"SCAL", None))
-        self.bSFTX.setText(QCoreApplication.translate("MainWindow", u"SFTX", None))
-        self.bSXOFF.setText(QCoreApplication.translate("MainWindow", u"SXOFF", None))
-        self.bSTX.setText(QCoreApplication.translate("MainWindow", u"STX", None))
-        self.bSRES.setText(QCoreApplication.translate("MainWindow", u"SRES", None))
-        self.bSWORRST.setText(QCoreApplication.translate("MainWindow", u"SWORRST", None))
         self.bSRX.setText(QCoreApplication.translate("MainWindow", u"SRX", None))
+        self.bSWORRST.setText(QCoreApplication.translate("MainWindow", u"SWORRST", None))
+        self.bSTX.setText(QCoreApplication.translate("MainWindow", u"STX", None))
+        self.bSFTX.setText(QCoreApplication.translate("MainWindow", u"SFTX", None))
+        self.bSNOP.setText(QCoreApplication.translate("MainWindow", u"SNOP", None))
+        self.bSWOR.setText(QCoreApplication.translate("MainWindow", u"SWOR", None))
+        self.bSXOFF.setText(QCoreApplication.translate("MainWindow", u"SXOFF", None))
+        self.bSRES.setText(QCoreApplication.translate("MainWindow", u"SRES", None))
         self.bSFSTXON.setText(QCoreApplication.translate("MainWindow", u"SFSTXON", None))
         self.bSIDLE.setText(QCoreApplication.translate("MainWindow", u"SIDLE", None))
         self.bSFRX.setText(QCoreApplication.translate("MainWindow", u"SFRX", None))
-        self.bSWOR.setText(QCoreApplication.translate("MainWindow", u"SWOR", None))
-        self.bSNOP.setText(QCoreApplication.translate("MainWindow", u"SNOP", None))
-        self.bWriteConfigurationsRegister.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u0438 \u043a\u043e\u043d\u0444.", None))
-        self.bLoadFile.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0438\u0442\u0438", None))
+        self.bSCAL.setText(QCoreApplication.translate("MainWindow", u"SCAL", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043c\u0430\u043d\u0434\u0438", None))
-        self.bWriteFIFO.setText(QCoreApplication.translate("MainWindow", u"TX FIFO", None))
-        self.bReadFIFO.setText(QCoreApplication.translate("MainWindow", u"RX FIFO", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"\u0412\u0456\u0434\u043f\u0440\u0430\u0432\u043a\u0430 \u043a\u043e\u043c\u0430\u043d\u0434", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Package error", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"RSSI", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Receive ok", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Receive", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"CRC error", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Start", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Bit error", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"Rx", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"\u0406\u043d\u0442\u0435\u0440\u0432\u0430\u043b", None))
+        self.radioButton.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0435\u043a\u0441\u0442\u043e\u0432\u0435 \u043f\u043e\u043b\u0435", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0432\u0456\u0434\u043e\u043c\u043b\u0435\u043d\u043d\u044f", None))
+        self.radioButton_2.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0438\u043f\u0430\u0434\u043a\u043e\u0432\u0435 \u043f\u043e\u0432\u0456\u0434\u043e\u043c\u0435\u043b\u0435\u043d\u043d\u044f", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043f\u0430\u043a\u0435\u0442\u0456\u0432", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0432\u0436\u0438\u043d\u0430 \u043f\u0430\u043a\u0435\u0442\u0443", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Start", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), QCoreApplication.translate("MainWindow", u"Tx", None))
     # retranslateUi
 
