@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Порт</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="bConnectDisconnect">
+        <property name="text">
+         <string>Підключити</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>State</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cListPort"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="LStateMachine">
+        <property name="text">
+         <string>Unknown</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Конфігурація модуля</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0" rowspan="4">
+           <widget class="QTableWidget" name="tConfigurationsRegister">
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <column>
+             <property name="text">
+              <string>Адреса</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Регістр</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Фактичне значення</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Задане значення</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>0x00</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>IOCFG2</string>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>0x01</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>IOCFG1</string>
+             </property>
+            </item>
+            <item row="2" column="0">
+             <property name="text">
+              <string>0x02</string>
+             </property>
+            </item>
+            <item row="2" column="1">
+             <property name="text">
+              <string>IOCFG0</string>
+             </property>
+            </item>
+            <item row="3" column="0">
+             <property name="text">
+              <string>0x03</string>
+             </property>
+            </item>
+            <item row="3" column="1">
+             <property name="text">
+              <string>FIFOTHR</string>
+             </property>
+            </item>
+            <item row="4" column="0">
+             <property name="text">
+              <string>0x04</string>
+             </property>
+            </item>
+            <item row="4" column="1">
+             <property name="text">
+              <string>SYNC1</string>
+             </property>
+            </item>
+            <item row="5" column="0">
+             <property name="text">
+              <string>0x05</string>
+             </property>
+            </item>
+            <item row="5" column="1">
+             <property name="text">
+              <string>SYNC0</string>
+             </property>
+            </item>
+            <item row="6" column="0">
+             <property name="text">
+              <string>0x06</string>
+             </property>
+            </item>
+            <item row="6" column="1">
+             <property name="text">
+              <string>PKTLEN</string>
+             </property>
+            </item>
+            <item row="7" column="0">
+             <property name="text">
+              <string>0x07</string>
+             </property>
+            </item>
+            <item row="7" column="1">
+             <property name="text">
+              <string>PKTCTRL1</string>
+             </property>
+            </item>
+            <item row="8" column="0">
+             <property name="text">
+              <string>0x08</string>
+             </property>
+            </item>
+            <item row="8" column="1">
+             <property name="text">
+              <string>PKTCTRL0</string>
+             </property>
+            </item>
+            <item row="9" column="0">
+             <property name="text">
+              <string>0x09</string>
+             </property>
+            </item>
+            <item row="9" column="1">
+             <property name="text">
+              <string>ADDR</string>
+             </property>
+            </item>
+            <item row="10" column="0">
+             <property name="text">
+              <string>0x0A</string>
+             </property>
+            </item>
+            <item row="10" column="1">
+             <property name="text">
+              <string>CHANNR</string>
+             </property>
+            </item>
+            <item row="11" column="0">
+             <property name="text">
+              <string>0x0B</string>
+             </property>
+            </item>
+            <item row="11" column="1">
+             <property name="text">
+              <string>FSCTRL1</string>
+             </property>
+            </item>
+            <item row="12" column="0">
+             <property name="text">
+              <string>0x0C</string>
+             </property>
+            </item>
+            <item row="12" column="1">
+             <property name="text">
+              <string>FSCTRL0</string>
+             </property>
+            </item>
+            <item row="13" column="0">
+             <property name="text">
+              <string>0x0D</string>
+             </property>
+            </item>
+            <item row="13" column="1">
+             <property name="text">
+              <string>FREQ2</string>
+             </property>
+            </item>
+            <item row="14" column="0">
+             <property name="text">
+              <string>0x0E</string>
+             </property>
+            </item>
+            <item row="14" column="1">
+             <property name="text">
+              <string>FREQ1</string>
+             </property>
+            </item>
+            <item row="15" column="0">
+             <property name="text">
+              <string>0x0F</string>
+             </property>
+            </item>
+            <item row="15" column="1">
+             <property name="text">
+              <string>FREQ0</string>
+             </property>
+            </item>
+            <item row="16" column="0">
+             <property name="text">
+              <string>0x10</string>
+             </property>
+            </item>
+            <item row="16" column="1">
+             <property name="text">
+              <string>MDMCFG4</string>
+             </property>
+            </item>
+            <item row="17" column="0">
+             <property name="text">
+              <string>0x11</string>
+             </property>
+            </item>
+            <item row="17" column="1">
+             <property name="text">
+              <string>MDMCFG3</string>
+             </property>
+            </item>
+            <item row="18" column="0">
+             <property name="text">
+              <string>0x12</string>
+             </property>
+            </item>
+            <item row="18" column="1">
+             <property name="text">
+              <string>MDMCFG2</string>
+             </property>
+            </item>
+            <item row="19" column="0">
+             <property name="text">
+              <string>0x13</string>
+             </property>
+            </item>
+            <item row="19" column="1">
+             <property name="text">
+              <string>MDMCFG1</string>
+             </property>
+            </item>
+            <item row="20" column="0">
+             <property name="text">
+              <string>0x14</string>
+             </property>
+            </item>
+            <item row="20" column="1">
+             <property name="text">
+              <string>MDMCFG0</string>
+             </property>
+            </item>
+            <item row="21" column="0">
+             <property name="text">
+              <string>0x15</string>
+             </property>
+            </item>
+            <item row="21" column="1">
+             <property name="text">
+              <string>DEVIATN</string>
+             </property>
+            </item>
+            <item row="22" column="0">
+             <property name="text">
+              <string>0x16</string>
+             </property>
+            </item>
+            <item row="22" column="1">
+             <property name="text">
+              <string>MCSM2</string>
+             </property>
+            </item>
+            <item row="23" column="0">
+             <property name="text">
+              <string>0x17</string>
+             </property>
+            </item>
+            <item row="23" column="1">
+             <property name="text">
+              <string>MCSM1</string>
+             </property>
+            </item>
+            <item row="24" column="0">
+             <property name="text">
+              <string>0x18</string>
+             </property>
+            </item>
+            <item row="24" column="1">
+             <property name="text">
+              <string>MCSM0</string>
+             </property>
+            </item>
+            <item row="25" column="0">
+             <property name="text">
+              <string>0x19</string>
+             </property>
+            </item>
+            <item row="25" column="1">
+             <property name="text">
+              <string>FOCCFG</string>
+             </property>
+            </item>
+            <item row="26" column="0">
+             <property name="text">
+              <string>0x1A</string>
+             </property>
+            </item>
+            <item row="26" column="1">
+             <property name="text">
+              <string>BSCFG</string>
+             </property>
+            </item>
+            <item row="27" column="0">
+             <property name="text">
+              <string>0x1B</string>
+             </property>
+            </item>
+            <item row="27" column="1">
+             <property name="text">
+              <string>AGCTRL2</string>
+             </property>
+            </item>
+            <item row="28" column="0">
+             <property name="text">
+              <string>0x1C</string>
+             </property>
+            </item>
+            <item row="28" column="1">
+             <property name="text">
+              <string>AGCTRL1</string>
+             </property>
+            </item>
+            <item row="29" column="0">
+             <property name="text">
+              <string>0x1D</string>
+             </property>
+            </item>
+            <item row="29" column="1">
+             <property name="text">
+              <string>AGCTRL0</string>
+             </property>
+            </item>
+            <item row="30" column="0">
+             <property name="text">
+              <string>0x1E</string>
+             </property>
+            </item>
+            <item row="30" column="1">
+             <property name="text">
+              <string>WOREVT1</string>
+             </property>
+            </item>
+            <item row="31" column="0">
+             <property name="text">
+              <string>0x1F</string>
+             </property>
+            </item>
+            <item row="31" column="1">
+             <property name="text">
+              <string>WOREVT0</string>
+             </property>
+            </item>
+            <item row="32" column="0">
+             <property name="text">
+              <string>0x20</string>
+             </property>
+            </item>
+            <item row="32" column="1">
+             <property name="text">
+              <string>WORCTRL</string>
+             </property>
+            </item>
+            <item row="33" column="0">
+             <property name="text">
+              <string>0x21</string>
+             </property>
+            </item>
+            <item row="33" column="1">
+             <property name="text">
+              <string>FREND1</string>
+             </property>
+            </item>
+            <item row="34" column="0">
+             <property name="text">
+              <string>0x22</string>
+             </property>
+            </item>
+            <item row="34" column="1">
+             <property name="text">
+              <string>FREND0</string>
+             </property>
+            </item>
+            <item row="35" column="0">
+             <property name="text">
+              <string>0x23</string>
+             </property>
+            </item>
+            <item row="35" column="1">
+             <property name="text">
+              <string>FSCAL3</string>
+             </property>
+            </item>
+            <item row="36" column="0">
+             <property name="text">
+              <string>0x24</string>
+             </property>
+            </item>
+            <item row="36" column="1">
+             <property name="text">
+              <string>FSCAL2</string>
+             </property>
+            </item>
+            <item row="37" column="0">
+             <property name="text">
+              <string>0x25</string>
+             </property>
+            </item>
+            <item row="37" column="1">
+             <property name="text">
+              <string>FSCAL1</string>
+             </property>
+            </item>
+            <item row="38" column="0">
+             <property name="text">
+              <string>0x26</string>
+             </property>
+            </item>
+            <item row="38" column="1">
+             <property name="text">
+              <string>FSCAL0</string>
+             </property>
+            </item>
+            <item row="39" column="0">
+             <property name="text">
+              <string>0x27</string>
+             </property>
+            </item>
+            <item row="39" column="1">
+             <property name="text">
+              <string>RCCTRL1</string>
+             </property>
+            </item>
+            <item row="40" column="0">
+             <property name="text">
+              <string>0x28</string>
+             </property>
+            </item>
+            <item row="40" column="1">
+             <property name="text">
+              <string>RCCTRL0</string>
+             </property>
+            </item>
+            <item row="41" column="0">
+             <property name="text">
+              <string>0x29</string>
+             </property>
+            </item>
+            <item row="41" column="1">
+             <property name="text">
+              <string>FSTEST</string>
+             </property>
+            </item>
+            <item row="42" column="0">
+             <property name="text">
+              <string>0x2A</string>
+             </property>
+            </item>
+            <item row="42" column="1">
+             <property name="text">
+              <string>PTEST</string>
+             </property>
+            </item>
+            <item row="43" column="0">
+             <property name="text">
+              <string>0x2B</string>
+             </property>
+            </item>
+            <item row="43" column="1">
+             <property name="text">
+              <string>AGCTEST</string>
+             </property>
+            </item>
+            <item row="44" column="0">
+             <property name="text">
+              <string>0x2C</string>
+             </property>
+            </item>
+            <item row="44" column="1">
+             <property name="text">
+              <string>TEST2</string>
+             </property>
+            </item>
+            <item row="45" column="0">
+             <property name="text">
+              <string>0x2D</string>
+             </property>
+            </item>
+            <item row="45" column="1">
+             <property name="text">
+              <string>TEST1</string>
+             </property>
+            </item>
+            <item row="46" column="0">
+             <property name="text">
+              <string>0x2E</string>
+             </property>
+            </item>
+            <item row="46" column="1">
+             <property name="text">
+              <string>TEST0</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="bLoadFile">
+            <property name="text">
+             <string>Завантажити</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="bWriteConfigurationsRegister">
+            <property name="text">
+             <string>Записати конф.</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="1">
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Регістри стану</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableWidget" name="tStatusRegister">
+          <property name="showGrid">
+           <bool>true</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Адреса</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Регістр</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Значення</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string>0xF0</string>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string>PARTNUM</string>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>0xF1</string>
+           </property>
+          </item>
+          <item row="1" column="1">
+           <property name="text">
+            <string>VERSION</string>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>0xF2</string>
+           </property>
+          </item>
+          <item row="2" column="1">
+           <property name="text">
+            <string>FREQEST</string>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>0xF3</string>
+           </property>
+          </item>
+          <item row="3" column="1">
+           <property name="text">
+            <string>LQI</string>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>0xF4</string>
+           </property>
+          </item>
+          <item row="4" column="1">
+           <property name="text">
+            <string>RSSI</string>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>0xF5</string>
+           </property>
+          </item>
+          <item row="5" column="1">
+           <property name="text">
+            <string>MARCSTATE</string>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>0xF6</string>
+           </property>
+          </item>
+          <item row="6" column="1">
+           <property name="text">
+            <string>WORTIME1</string>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>0xF7</string>
+           </property>
+          </item>
+          <item row="7" column="1">
+           <property name="text">
+            <string>WORTIME0</string>
+           </property>
+          </item>
+          <item row="8" column="0">
+           <property name="text">
+            <string>0xF8</string>
+           </property>
+          </item>
+          <item row="8" column="1">
+           <property name="text">
+            <string>PKTSTATUS</string>
+           </property>
+          </item>
+          <item row="9" column="0">
+           <property name="text">
+            <string>0xF9</string>
+           </property>
+          </item>
+          <item row="9" column="1">
+           <property name="text">
+            <string>VCO_VC_DAC</string>
+           </property>
+          </item>
+          <item row="10" column="0">
+           <property name="text">
+            <string>0xFA</string>
+           </property>
+          </item>
+          <item row="10" column="1">
+           <property name="text">
+            <string>TXBYTES</string>
+           </property>
+          </item>
+          <item row="11" column="0">
+           <property name="text">
+            <string>0xFB</string>
+           </property>
+          </item>
+          <item row="11" column="1">
+           <property name="text">
+            <string>RXBYTES</string>
+           </property>
+          </item>
+          <item row="12" column="0">
+           <property name="text">
+            <string>0xFC</string>
+           </property>
+          </item>
+          <item row="12" column="1">
+           <property name="text">
+            <string>RCCTRL1_STATUS</string>
+           </property>
+          </item>
+          <item row="13" column="0">
+           <property name="text">
+            <string>0xFD</string>
+           </property>
+          </item>
+          <item row="13" column="1">
+           <property name="text">
+            <string>RCCTRL0_STATUS</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Відправка команд</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="3" column="0">
+           <widget class="QPushButton" name="bReadFIFO">
+            <property name="text">
+             <string>Зчитати буфер</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="bWriteFIFO">
+            <property name="text">
+             <string>Записати в буфер</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QPlainTextEdit" name="plainFIFO"/>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Буфер</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="3" column="2">
+           <widget class="QPushButton" name="bSPWD">
+            <property name="text">
+             <string>SPWD</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="bSRX">
+            <property name="text">
+             <string>SRX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="bSWORRST">
+            <property name="text">
+             <string>SWORRST</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="bSTX">
+            <property name="text">
+             <string>STX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="bSFTX">
+            <property name="text">
+             <string>SFTX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="bSNOP">
+            <property name="text">
+             <string>SNOP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="bSWOR">
+            <property name="text">
+             <string>SWOR</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="bSXOFF">
+            <property name="text">
+             <string>SXOFF</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="bSRES">
+            <property name="text">
+             <string>SRES</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="bSFSTXON">
+            <property name="text">
+             <string>SFSTXON</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="bSIDLE">
+            <property name="text">
+             <string>SIDLE</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="bSFRX">
+            <property name="text">
+             <string>SFRX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="bSCAL">
+            <property name="text">
+             <string>SCAL</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Команди</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Rx</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Package error</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>RSSI</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Receive ok</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>Receive</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>CRC error</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Start</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Stop</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0" rowspan="9">
+           <widget class="QPlainTextEdit" name="plainTextEdit"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Bit error</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Tx</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>Інтервал</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="radioButton">
+          <property name="text">
+           <string>Текстове поле</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QSpinBox" name="spinBox">
+          <property name="maximum">
+           <number>60</number>
+          </property>
+          <property name="value">
+           <number>30</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" rowspan="12">
+         <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>Повідомлення</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QSpinBox" name="spinBox_3">
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="text">
+           <string>Випадкове повідомелення</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>Кількість пакетів</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>Довжина пакету</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>300</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Stop</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
